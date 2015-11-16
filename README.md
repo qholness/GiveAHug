@@ -1,0 +1,2 @@
+# GiveAHug
+A hug journal
