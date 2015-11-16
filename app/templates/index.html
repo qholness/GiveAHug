@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+  {% block content %}
+    <!-- <p>Hi {{ user['nickname'] }}</p> -->
+    <h1>Hi, {{ user.nickname }}!</h1>
+      {% for post in posts %}
+      <div><p>{{ post.author.nickname }} says: <b>{{ post.body }}</b></p></div>
+      {% endfor %}
+   <script type="text/javascript">
+    //     $("click_button").
+    //     alert("Drat, I've been clicked")
+    //   };
+    // </script>
+    <button id="click_button">
+      Click Me!
+    </button>
+  {% endblock %}
